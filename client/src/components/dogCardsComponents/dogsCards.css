@@ -1,0 +1,10 @@
+.cards-containers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    top: 160px;
+    background-color: #ECD3F3 ;
+    position: absolute;
+
+}

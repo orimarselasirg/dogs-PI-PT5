@@ -1,0 +1,145 @@
+.about-container{
+    position: absolute;
+    background: #ECD3F3;
+    width: 100vw;
+    min-width: 300px;
+    max-width: 1300px;
+    height: 100vh;
+    top: 160px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    font-family: 'Sniglet', cursive;
+    font-size: 1.3em;
+}
+
+.intro-container{
+    width: 40%;
+    background-color: rgb(234 76 137 / 17%);
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 7px;
+    text-align: center;
+    padding: 15px;    
+}
+
+.intro-container:hover{
+    box-shadow: 3px 0px 30px -12px black;
+    transition: 0.4s;
+}
+
+.who-container{
+    background-color: rgb(234 76 137 / 17%);
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 7px;
+    text-align: center;
+    padding: 15px;
+}
+.who-container:hover{
+    box-shadow: 3px 0px 30px -12px black;
+    transition: 0.4s;
+}
+
+.skill-container{
+    background-color: rgb(234 76 137 / 17%);
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 7px;
+    text-align: center;
+    padding: 15px
+}
+
+.skill-container:hover{
+    box-shadow: 3px 0px 30px -12px black;
+    transition: 0.4s;
+}
+
+.api-container{
+    background-color: rgb(234 76 137 / 17%);
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 7px;
+    text-align: center;
+    padding: 15px;
+}
+.api-container:hover{
+    box-shadow: 3px 0px 30px -12px black;
+    transition: 0.4s;
+}
+
+
+
+.title-about{
+    font-size: 2em;
+    text-shadow: 2px 6px 14px black;
+}
+
+.avatar-container{
+    background-image: url('./Avatar-Maker.png');
+    max-height: 200px;
+    height: 26%;
+    max-width: 200px;
+    min-width: 170px;
+    width: 14%;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    z-index: 100;
+    position: absolute
+}
+
+.icons-container{
+    display: flex;
+    width: 61%;
+    justify-content: space-around;
+}
+
+.icon{
+    display: flex;
+    height: 32px;
+    width: 32px;
+    background-size: 33px;
+    background-repeat: no-repeat;
+}
+#js{
+background-image: url('./icons/icons8-javascript-48.png');
+}
+#react{
+background-image: url('./icons/icons8-reaccionar-nativo-48.png');
+}
+
+#css{
+background-image: url('./icons/icons8-css3-48.png');
+}
+
+#html{
+background-image: url('./icons/icons8-html-5-48.png');
+}
+
+#postgres{
+background-image: url('./icons/icons8-postgresql-48.png');
+}
+
+#node{
+background-image: url('./icons/icons8-nodejs-48.png');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');

@@ -1,0 +1,7 @@
+/* fondo : #F3ECD3 */
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #ECD3F3;
+    height: 120vh;
+}

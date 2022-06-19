@@ -1,0 +1,143 @@
+.breed-name{
+    font-family: 'Sniglet', cursive;
+    font-size: 2em;
+    color: #3a0652;
+    /* background-color: #c9595966; */
+    width: 98%;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -15px;
+    border-radius: 8px;
+}
+
+.breed-details{
+    background-color: #de8e8e52;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 100%;
+    max-height: 685px;
+    border-radius: 17px;
+    width: 100%;
+    top: 200px;
+    position: absolute;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.dog-image{
+    width: 100%;
+    height: 100%;
+}
+
+.image-detail{
+    width: 100%;
+    height: 300px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #ECD3F3;
+    height: 113vh;
+    /* background-color: aqua; */
+}
+
+.info-cont{
+    position: relative;
+    /* background: #3b383a63; */
+    width: 100%;
+    height: 174px;
+    top: -3px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    font-family: 'Sniglet', cursive;
+    font-size: 1.05rem;
+}
+
+.temp-cont-detail{
+    background: #ffffffd9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 78px;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.info-details-cont{
+    background: #ffffffd9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 71px;
+    width: 100%;
+}
+
+.life_span_info {
+    /* background-color: green; */
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.height_info {
+    /* background-color: green; */
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.weight_info{
+    /* background-color: green; */
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.span_info{
+    position: relative;
+    left: 0px;
+}
+
+.span-title{
+    /* background-color: white; */
+    width: 30%;
+    color: #26004b;
+    font-weight: bolder;
+    font-size: larger;
+    text-shadow: 0px 3px 12px
+}
+
+.detail-image{
+    background-image: url('./kisspng-dog-training-cat-pet-sitting-dog-5a7525cad02d88.4266260215176268268527.png');
+    max-height: 200px;
+    height: 26%;
+    max-width: 300px;
+    width: 39%;
+    background-size: 123px;
+    top: 42px;
+    background-repeat: no-repeat;
+    z-index: 500;
+    position: fixed;
+    right: -6%;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');

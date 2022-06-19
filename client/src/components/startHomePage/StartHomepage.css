@@ -1,0 +1,34 @@
+.bg-image{
+    background-image: url('./image-from-rawpixel-id-5904486-jpeg.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    z-index: 0;
+    
+}
+
+.container-shp{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@font-face {
+    font-family: 'Indie Flower', cursive;
+    src: url('./Indie_Flower/IndieFlower-Regular.ttf') format('truetype')
+}
+
+.title-shp{
+    Display: flex;
+    height: 50px;
+    align-items: center;
+    font-family: 'Indie Flower';
+    font-size: 50px;
+}
+

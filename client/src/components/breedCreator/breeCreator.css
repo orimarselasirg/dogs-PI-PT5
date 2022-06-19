@@ -1,0 +1,162 @@
+.form-container{
+    /* background-color: red; */
+    background-color: #ECD3F3;
+    position: relative;
+    top: 156px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* image-rendering: url('./Dog.png'); */
+    /* background-image: url('./Dog.png'); */
+}
+
+.dog-image-creator{
+    background-image: url('./dog-png.png');
+    width: 20%;
+    height: 23%;
+    background-size: 126px;
+    /* background-color: red; */
+    background-repeat: no-repeat;
+    z-index: 3000;
+    /* top: 40px; */
+    /* left: 82%; */
+    /* display: flex; */
+    background-size: 105px;
+    position: fixed;
+    top: 40px;
+    right: -1%;
+}
+
+.dog-image-creator:hover {
+    background-size: 110px;
+    transition: 0.5s;
+}
+
+
+.form-style{
+    width: 28%;
+    background-color: #d82a2a2e;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    padding: 49px;
+    border-radius: 14px;
+    box-shadow: 0px -1px 18px -4px;
+}
+
+.label-text{
+    /* background-color: red; */
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Sniglet', cursive;
+    margin-top: 1px;
+    margin-bottom: 9px;
+    font-size: 1.3em;
+}
+
+.input-form{
+    width:100%;
+    height: 34px;
+    line-height: 28px;
+    padding: 0 2rem;
+    padding-left: 0em;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+}
+.input-form::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input-form:focus, .input-form:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+
+.select-style{
+    width: 65%;
+    min-width: 34px;
+    max-width: 273px;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 5.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+.submit-button{
+    margin-top: 65px;
+    margin-bottom: -37px;
+    cursor: pointer;
+}
+
+h1{
+    display: flex;
+    margin-block: 0;
+    position: relative;
+    top: -25px;
+    border-radius: 10px;
+    background-color: #ffffff70;
+    width: 110%;
+    justify-content: center;
+    color: #65057c;
+    font-family: 'Sniglet', cursive;
+    text-align: center;
+}
+
+
+.delete-button{
+    color: #090909;
+    padding: 1px 13px;
+    font-size: 1em;
+    font-weight: bolder;
+    font-family: 'Sniglet', cursive;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 0px solid #efe5e5;
+    transition: all .1s;
+    box-shadow: 4px 3px 13px #c5c5c5, -1px 1px 12px #ffffff;
+}
+
+.temp-container-select{
+    background-color: rgb(253 253 253 / 43%);
+    border-radius: 10px;
+    width: 110%;
+    height: 111px;
+    margin-top: 11px;
+    margin-bottom: -51px;
+    padding-left: 7px;
+    padding-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.temp-unique{
+    font-family: 'Sniglet', cursive;
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    /* background-color: #e16c6c5c; */
+    justify-content: space-between;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');

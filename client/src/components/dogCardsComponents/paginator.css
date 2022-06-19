@@ -1,0 +1,118 @@
+.cards-style-container{
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+
+.title-breed{
+    z-index: 2000;
+    top: 30px;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #D3F3EC; */
+}
+.order-buttons{
+    margin-right: 10px;
+    position: fixed;
+    z-index: 2000;
+    min-width: 220px;
+    max-width: 260px;
+    width: 31%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    right: 0;
+    top: 90px;
+    justify-content: space-around; 
+}
+
+.o-button{
+    height: 31px;
+    width: 73px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: #090909;
+    font-size: 81%;
+    font-weight: bolder;
+    font-family: 'Caveat Brush', cursive;
+    border-radius: 7px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .1s;
+    box-shadow: 0px 1px 8px -3px #000000;
+    justify-content: center;
+}
+
+.pager-buttons{
+    position: fixed;
+    z-index: 1000;
+    width: 14%;
+    display: flex;
+    justify-content: space-evenly;
+    top: 90px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.p-button{
+    height: 31px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 1em;
+    font-weight: bolder;
+    font-family: 'Caveat Brush', cursive;
+    border-radius: 7px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .1s;
+    box-shadow: 0px 1px 8px -3px #000000;
+}
+
+.controls-buttons{
+    display: flex;
+    /* background-color: blue; */
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* button{
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 1em;
+    font-weight: bolder;
+    font-family: 'Caveat Brush', cursive;
+    border-radius: 7px;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .1s;
+    box-shadow: 0px 3px 7px 3px #00000085;
+   } */
+   
+   button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+   }

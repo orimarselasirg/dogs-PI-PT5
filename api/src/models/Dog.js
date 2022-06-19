@@ -5,9 +5,9 @@ module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define('dog', {
     id : {
-      type : DataTypes.INTEGER,
-      // defaultValue : DataTypes.UUIDV4,
-      autoIncrement : true,
+      type : DataTypes.UUID,
+      defaultValue : DataTypes.UUIDV4,
+      // autoIncrement : true,
       primaryKey : true
     },
     name: {
@@ -15,11 +15,11 @@ module.exports = (sequelize) => {
       allowNull: false
     },
     height : {
-      type : DataTypes.STRING,
+      type : DataTypes.JSON,
       allowNull: false
     },
     weight : {
-      type : DataTypes.STRING,
+      type : DataTypes.JSON,
       allowNull: false
     },
     life_span : {
@@ -27,14 +27,11 @@ module.exports = (sequelize) => {
       allowNull: true
     },
     image : {
-      type : DataTypes.BLOB,
+      type : DataTypes.JSON,
       allowNull: true
     },
-    temperament : {
-      type : DataTypes.STRING,
-      allowNull: true
-    }
-  },{
-    initialAutoIncrement : 1000,
+  },
+  {
+    timestamps : false,
   });
 };

@@ -16,3 +16,12 @@ export function next(sum2, sum, setSum, setSum2, page, array) {
       setSum2(sum2 - page);
     }
   }
+
+  export function pager(array, page){
+    let pages = []
+    let list = Math.ceil(array.length/page)
+    for(let i=1; i<= list; i++){
+    pages.push(i)
+    }
+    return pages
+  }

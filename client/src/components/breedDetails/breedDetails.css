@@ -137,7 +137,10 @@
     right: -6%;
 }
 
-
+.error{
+    color: red;
+    font-size: 13px;
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');

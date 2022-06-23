@@ -31,7 +31,7 @@ function DogsCards({input}) {
   
   return (
     <div className = 'cards-containers'>
-      <Paginator array = {showState()} page = {8}/>
+      <Paginator array = {showState()} page = {8} breeds = {breeds}/>
     </div>
   );
 }

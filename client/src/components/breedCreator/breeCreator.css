@@ -2,9 +2,9 @@
     /* background-color: red; */
     background-color: #ECD3F3;
     position: relative;
-    top: 156px;
+    top: 169px;
     width: 100%;
-    height: 100%;
+    height: 1072px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,6 +103,21 @@
     margin-top: 65px;
     margin-bottom: -37px;
     cursor: pointer;
+    border-width: 0.1px;
+    border-radius: 5px;
+}
+
+.form-button{
+    width: 100%;
+    /* background-color: red; */
+    height: 63px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    top: -4px;
 }
 
 h1{

@@ -2,14 +2,18 @@
 const { expect } = require('chai');
 const session = require('supertest-session');
 const app = require('../../src/app.js');
-const { Dog, conn } = require('../../src/db.js');
+const { Dog,Temperament, conn } = require('../../src/db.js');
+var supertest = require('supertest-as-promised')(require('../../src/app'))
+
 
 const agent = session(app);
 const dog = {
   name: 'Pug',
+  height: 5,
+  weight: 5,
 };
 
-describe('Videogame routes', () => {
+describe('Dog routes', () => {
   before(() => conn.authenticate()
   .catch((err) => {
     console.error('Unable to connect to the database:', err);
@@ -22,3 +26,31 @@ describe('Videogame routes', () => {
     );
   });
 });
+
+describe('Routes', ()=>{
+  describe('/temperaments', ()=>{
+    it('*must return all temperaments', ()=>{
+      return supertest
+      .get('/temperaments').expect(200)      
+    });
+    it('*id temperament must be a number', ()=>{
+      return supertest
+      .get('/temperaments').expect(res =>{
+        expect(typeof(res.body[0].id)).to.be.equal('number')
+      })      
+    })
+  })
+  describe('/dogs', ()=>{
+    it('*must return status code 200 when the  route is called', ()=>{
+      return supertest
+      .get('/dogs')
+      .expect(200)
+    });
+    it('*the response must be in JSON format', ()=>{
+      return supertest
+      .get('/dogs')
+      .expect('Content-Type', /json/)
+    })
+
+  })
+})

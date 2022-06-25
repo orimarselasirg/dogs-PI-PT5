@@ -70,7 +70,7 @@ router.get('/dogs', async (req, res) => {
             // llamo a todos los perritos de la API    
             const APIBreeds = await axios.get('https://api.thedogapi.com/v1/breeds')
             .catch(err =>{
-                res.status(400).send(err)
+                res.status(200).send(err)
             })
 
             //concateno los perritos
@@ -85,7 +85,7 @@ router.get('/dogs', async (req, res) => {
 
             //verifico que tenga datos en en la concatenacion
             if(breeds.length === 0) return res.status(400).send('no existe perritos en las base de datos')
-            res.status(201).send(breeds)
+            res.status(200).send(breeds)
         } catch (error) {
             console.log(error)
         }
@@ -146,7 +146,7 @@ router.post('/dogs', async (req, res) => {
         let id = await Temperament.findAll({where : {temperament : temperament[i]}, attributes : ['id']})
         await breed.addTemperament(id)
     }
-    res.status(201).send(breed)
+    res.status(200).send(breed)
     
     } catch (error) {
     console.log(error)

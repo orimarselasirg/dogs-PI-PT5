@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import Card from './Card'
-import { NavLink } from "react-router-dom";
 import {az, za} from '../../controllers/alphabeticalOrders'
 import {sortWeightMaxAsc, sortWeightMaxDesc, sortWeightMinAsc, sortWeightMinDesc, sortHeightMaxAsc, sortHeightMaxDesc, sortHeightMinAsc, sortHeightMinDesc} from '../../controllers/numericalOrder'
 import {next, prev, pager} from '../../controllers/paginatorFunction'

@@ -17,12 +17,12 @@ function About(props) {
                     ¿Quien Soy?
                 </span>
                 <span>
-                    un apasionado por la tecnologia y el arte, me gusta tocar el piano y poder crear y plasmar cosas en el dia a diaa traves de los talentos que se podido desarrollar
+                    Un apasionado por la tecnologia y el arte, me gusta tocar el piano y poder crear y plasmar cosas en el dia a diaa traves de los talentos que se podido desarrollar
                 </span>
             </div>
             <div className='skill-container'>
                 <span className='title-about'>
-                    Mis conocmientos en desarrollo
+                    Mis conocimientos en desarrollo
                 </span>
                 <span>
                     Poseo conocimiento teoricos y practicos cursadas en Henry Bootcamp como experiencia como desarrollador

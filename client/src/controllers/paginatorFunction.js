@@ -12,8 +12,10 @@ export function next(sum2, sum, setSum, setSum2, page, array) {
   export function prev(sum2, sum, setSum, setSum2, page, array) {
     if (sum === array.length) {
     } else {
-      setSum(sum - page);
-      setSum2(sum2 - page);
+      if(sum>0){
+        setSum(sum - page);
+        setSum2(sum2 - page);
+      }
     }
   }
 

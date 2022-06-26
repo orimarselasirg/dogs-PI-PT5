@@ -6,6 +6,10 @@
     align-items: center;
     position: fixed;
     z-index:100;
+    background-image: url('./dog-banner.png');
+    background-size: 19%;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .link-container{
@@ -27,6 +31,7 @@
     font-size: 1.7em;
     font-weight: bolder;
     border-radius: 5px;
+    color: black
 }
 
 

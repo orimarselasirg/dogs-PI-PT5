@@ -1,12 +1,33 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { addFavorite, removeFavorite } from "../../redux/actions";
+import { useDispatch, useSelector } from "react-redux";
 import '../dogCardsComponents/card.css'
 
+
 function Card(props) {
+const dispatch = useDispatch()
+const favorites = useSelector(state => state.favorites)
+
+const favValid =favorites.find(e=>{
+  if(e.id === props.id){ return true} else { return false} 
+})
+
+function breedFavorite (e){
+  e.preventDefault()
+  if(!favValid) {dispatch(addFavorite({id: props.id, image : props.image, name : props.name}))
+    alert(`Has agregado la raza ${props.name} a tu lista de razas favoritas`)
+  }else {
+    alert (`Se removio la raza ${props.name} de tus favoritos`)
+    dispatch(removeFavorite(props.id))
+  }
+}
+  
   return (
     <div className="card">
       <NavLink  className = 'breed-info' to={`/racedetails/${props.name}`}>
       <p className = 'breed-info'>{props.name}</p>
+      <span onClick={breedFavorite} className={favValid ? 'star' : 'noStar'}></span>
       </NavLink>
       <img className="dogImage" src={props.image} alt="" />
       <div className="texts-container">

@@ -1,0 +1,110 @@
+.dogImageFav{
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    max-width: 450px;
+    border-radius: 3px;
+}
+.favorite-card{
+    border-radius: 10px;
+    background: #e0e0e097;
+    box-shadow: 0px 4px 43px -13px #000000;
+    transition: all 300ms;
+    width: 374px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 338px;
+    margin: 11px;
+    /* /* margin-top: 0; */
+}
+.favorite-card:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.b-fav{
+    border-radius: 5px;
+    border-width: 0.0000001px;
+    box-shadow: 3px 0px 16px -3px #2f2b2f;;
+    font-family: 'Sniglet', cursive;
+    cursor: pointer;
+}
+
+.breed-info-fav{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Sniglet', cursive;
+    width: 100%;
+    font-size: 150%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4f0032;
+}
+
+.no-favorites{
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Sniglet', cursive;
+    width: 100%;
+    font-size: 40px;
+    font-weight: bolder;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4f0032;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+}
+
+.sad-dog{
+    background-image: url('./saddog.png');
+    height: 47%;
+    width: 42%;
+    background-size: 395px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 36%;
+    bottom: 33%;
+}
+
+.favorites-cards-containers{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    position: relative;
+    top : 36px
+}
+
+/* width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; */
+/* .star{
+    background-image: url('./favoritesilver_star_favorite_6338.png');
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+.noStar{
+    background-image: url('./favoritesilver_star_favorite_6337.png');
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+} */

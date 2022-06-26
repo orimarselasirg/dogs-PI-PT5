@@ -6,9 +6,11 @@ import '../dogCardsComponents/dogsCards.css'
 function DogsCards({input}) {
   // const created =useSelector(state=>state.created);
   const breeds = useSelector((state) => state.races)// estado global de razas
+  // const favorites = useSelector(state => state.favorites)
   const [dogs, setDogs] = useState([]) // estado local de razas
   // const temp = created.map(e=>(e.temperaments))
   // const temp2 = temp.map(e=>e[0].temperament)
+  
   useEffect(()=>{
     raceFiltered(input)
   } // eslint-disable-next-line react-hooks/exhaustive-deps 
@@ -21,8 +23,8 @@ function DogsCards({input}) {
           if(e.name.toLowerCase().includes(breed.toLowerCase()) || e.temperament.toLowerCase().includes(breed.toLowerCase()))
           {
               return e;
-            }
-    }})
+          }} return null
+  })
     setDogs(dynamicFilter)
   }
     

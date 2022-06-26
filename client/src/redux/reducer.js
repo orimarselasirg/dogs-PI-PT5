@@ -1,4 +1,4 @@
-import {GET_ALL_RACES, SEARCH_RACE, GET_RACE_DETAILS, ADD_FAVORITE_RACE, DELETE_RACE, REMOVE_FAVORITE_RACE, CREATE_RACE, GET_TEMPERAMENTS} from './actions'
+import {GET_ALL_RACES, SEARCH_RACE, GET_RACE_DETAILS, ADD_FAVORITE_BREED, DELETE_RACE, REMOVE_FAVORITE_BREED, CREATE_RACE, GET_TEMPERAMENTS} from './actions'
 
 
 const initialState ={
@@ -6,7 +6,7 @@ const initialState ={
     created : [],
     details : {},
     favorites : [],
-    temperaments: []
+    // temperaments: []
 }
 
 export function reducer(state = initialState, action) {
@@ -35,7 +35,7 @@ export function reducer(state = initialState, action) {
                 details : action.payload
             };
         }
-        case ADD_FAVORITE_RACE: {
+        case ADD_FAVORITE_BREED: {
             return {
                 ...state,
                 favorites : [...state.favorites, action.payload]
@@ -47,7 +47,7 @@ export function reducer(state = initialState, action) {
                 races : state.races.filter(race => race.id !== action.payload)
             };
         }
-        case REMOVE_FAVORITE_RACE : {
+        case REMOVE_FAVORITE_BREED : {
             return{
                 ...state,
                 favorites : state.favorites.filter(race => race.id !== action.payload)

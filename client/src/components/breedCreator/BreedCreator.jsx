@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { createRace } from "../../redux/actions";
 import { getTemperaments } from "../../redux/actions";
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 import "../breedCreator/breeCreator.css";
 
 // genero funcion para validar formulario
@@ -237,7 +237,7 @@ function BreedCreator(props) {
         <p className="error">{tempError(input.temperament)}</p>
 
         <select className="select-style" name="temperament" onChange={selectHandler}>
-          {temperaments.map((e) => (
+          {temperaments?.map((e) => (
             <option className="ramiro" name="temperament" key={e.id}>
               {e.temperament}
             </option>

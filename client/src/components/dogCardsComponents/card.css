@@ -3,6 +3,22 @@
     height: 300px;
     border-radius: 3px;
 }
+.star{
+    background-image: url('../favorites//favoritesilver_star_favorite_6338.png');
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+.noStar{
+    background-image: url('../favorites//favoritesilver_star_favorite_6337.png');
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
 
 .card{
     border-radius: 10px;
@@ -62,7 +78,7 @@
     font-family: 'Sniglet', cursive;
     font-size: 15px;
     width: 100%;
-    font-size: 34px;
+    font-size: 128%;
     height: 38px;
     display: flex;
     justify-content: center;

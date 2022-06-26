@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { getAllRaces} from '../../redux/actions';
 import Nav from '../nav/Nav'
 import SearchBar from '../searchBar/SearchBar';
-import Favorites from '../Favorites';
+import Favorites from '../favorites/Favorites';
 import DogsCards from '../dogCardsComponents/DogsCards';
 import BreedCreator from '../breedCreator/BreedCreator';
 import BreedDetails from '../breedDetails/BreedDetails';
@@ -14,11 +14,15 @@ import "../home/home.css"
 
 function Home(props) {
     const [input, setInput] = useState('')
+    // const [fav, setFav] = useState(false)
     const dispatch = useDispatch();
+    // const favorites = useSelector(state => state.favorites)
     useEffect(()=> {
         dispatch(getAllRaces());
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
+
+
 
     
     return (

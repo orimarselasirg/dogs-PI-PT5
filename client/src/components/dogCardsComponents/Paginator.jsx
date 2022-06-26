@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Card from './Card'
 import {az, za} from '../../controllers/alphabeticalOrders'
 import {sortWeightMaxAsc, sortWeightMaxDesc, sortWeightMinAsc, sortWeightMinDesc, sortHeightMaxAsc, sortHeightMaxDesc, sortHeightMinAsc, sortHeightMinDesc} from '../../controllers/numericalOrder'
-import {next, prev, pager} from '../../controllers/paginatorFunction'
+import {next, prev} from '../../controllers/paginatorFunction'
 import '../dogCardsComponents/paginator.css'
 
 
@@ -16,7 +16,7 @@ function Paginator({array, page, breeds}) {
     const [state, setState] = useState({value:''})
     
     let list = Math.ceil(breeds.length/page)
-    let pages = pager(breeds, page)
+    // let pages = pager(breeds, page)
     
 function order(){asc ? az(setAsc, array) : za(setAsc, array);}
   
@@ -35,7 +35,6 @@ if(state.value ==='height-min-asc' || 'height-min-desc'){
   height ?  sortHeightMinAsc(setHeight, array) : sortHeightMinDesc(setHeight, array)
   }
 }
-
 
   return (
     <div>
@@ -87,6 +86,8 @@ if(state.value ==='height-min-asc' || 'height-min-desc'){
               image={breed.image.url}
               temperament={breed.temperament}
               weight = {breed.weight.metric}
+              // fav ={fav}
+              // setFav ={setFav}
               // image2={breed.image}
               // temperament2={
               //   breed.temperaments?.map(e=>(

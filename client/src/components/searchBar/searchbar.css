@@ -29,9 +29,37 @@
     color: #9e9ea7;
    }
    
-   .input-search:hover {
+.input-search:hover {
     outline: none;
     border-color: rgba(234,76,137,0.4);
     background-color: #fff;
     box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
-   }
+}
+
+@media (max-width: 724px) {
+    .input-search{
+    width: 42%;
+    height: 32px;
+    line-height: 28px;
+    padding: 0;
+    padding-left: 0;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+    }
+
+    .input-sea::placeholder {
+        color: #9e9ea7;
+       }
+       
+    .input-search:hover {
+        outline: none;
+        border-color: rgba(234,76,137,0.4);
+        background-color: #fff;
+        box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+    }
+    
+}

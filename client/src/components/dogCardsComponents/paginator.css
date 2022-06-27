@@ -50,7 +50,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     right: 0;
-    top: 90px;
+    top: 79px;
     justify-content: space-between;
 }
 
@@ -173,6 +173,48 @@
     color: #666;
     box-shadow: inset 4px 4px 12px #c5c5c5,
                 inset -4px -4px 12px #ffffff;
+   }
+
+   @media(max-width:412px){
+    .order-buttons{
+        margin-right: 0;
+        position: fixed;
+        z-index: 1000;
+        min-width: 0;
+        max-width: 342px;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        right: 0;
+        top: 73px;
+        justify-content: center;
+        transition: 1s;
+    }
+    .pager-buttons{
+        position: fixed;
+        z-index: 1000;
+        max-width: 121px;
+        min-width: 0;
+        width: 100%;
+        display: flex;
+        top: 105px;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        right: 0px;
+        transition: 1s;
+    }
+    .paginas{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        font-weight: 600;
+        font-family: 'Sniglet', cursive;
+        font-size: 13px;
+        transition: 1s;
+    }
    }
 
    @import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');

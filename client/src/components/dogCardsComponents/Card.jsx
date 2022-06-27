@@ -1,13 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 import { addFavorite, removeFavorite } from "../../redux/actions";
 import { useDispatch, useSelector } from "react-redux";
 import '../dogCardsComponents/card.css'
+import {spinnerchanger} from '../../controllers/spinControl'
 
 
 function Card(props) {
 const dispatch = useDispatch()
 const favorites = useSelector(state => state.favorites)
+const [spinner, setSpinner] = useState(false)
+
+
+spinnerchanger(setSpinner)
 
 const favValid =favorites.find(e=>{
   if(e.id === props.id){ return true} else { return false} 
@@ -24,12 +29,19 @@ function breedFavorite (e){
 }
   
   return (
+    
+    
+      
     <div className="card">
       <NavLink  className = 'breed-info' to={`/racedetails/${props.name}`}>
       <p className = 'breed-info'>{props.name}</p>
       <span onClick={breedFavorite} className={favValid ? 'star' : 'noStar'}></span>
       </NavLink>
-      <img className="dogImage" src={props.image} alt="" />
+      <div className='spinner-cont'>
+        { !props.image || !spinner ? <div className="spinner"/> :
+          <img className="dogImage" src={props.image} alt="" />
+        }
+      </div>
       <div className="texts-container">
         <div className="texts-temp">
           <span className="span-temp">Temperamentos: </span>
@@ -39,7 +51,7 @@ function breedFavorite (e){
         <span className="span-weight">Peso: </span>
         <span className = 'breed-weigth'>{props.weight} Kg</span>
       </div>
-      </div>
+      </div> 
     </div>
   );
 }

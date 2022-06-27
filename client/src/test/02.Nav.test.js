@@ -18,19 +18,19 @@ describe('componente Nav', ()=>{
     });
 })
 
-describe('componente Card', ()=>{
-    let card;
-    beforeEach(()=>{
-        card = shallow(<Card/>)
-    });
+// describe('componente Card', ()=>{
+//     let card;
+//     beforeEach(()=>{
+//         card = shallow(<Card/>)
+//     });
 
-    it('Debe tener una NavLink que que dirija a los detalles de la raza"', ()=>{
-        expect(card.find(NavLink).prop('to')).toBe('/racedetails/undefined');
+//     it('Debe tener una NavLink que que dirija a los detalles de la raza"', ()=>{
+//         expect(card.find(NavLink).prop('to')).toBe('/racedetails/undefined');
         
-    });
-    it('Deberia tener una etiqueta "p" con un nombre de clase llamado "breed-info"', ()=>{
-        expect(card.find('p').prop('className')).toEqual('breed-info');
+//     });
+//     it('Deberia tener una etiqueta "p" con un nombre de clase llamado "breed-info"', ()=>{
+//         expect(card.find('p').prop('className')).toEqual('breed-info');
        
-    });
-})
+//     });
+// })
 

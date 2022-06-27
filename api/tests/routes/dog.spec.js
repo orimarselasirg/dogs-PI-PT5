@@ -41,7 +41,7 @@ describe('Routes', ()=>{
     })
   })
   describe('/dogs', ()=>{
-    it('*must return status code 200 when the  route is called', ()=>{
+    it('*must return status code 200 when the route is called', ()=>{
       return supertest
       .get('/dogs')
       .expect(200)

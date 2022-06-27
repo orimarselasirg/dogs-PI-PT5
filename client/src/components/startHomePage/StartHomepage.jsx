@@ -1,23 +1,35 @@
-import React from "react";
+import React, {useState} from "react";
 import { NavLink } from "react-router-dom";
 import "./StartHomepage.css";
 import "./button.css"
+import {spinnerchanger} from '../../controllers/spinControl'
+// import '../dogCardsComponents/card.css'
 
 function StartHomepage(props) {
+const [spinner, setSpinner] = useState(false)
+spinnerchanger(setSpinner)
+
+
   return (
-    <div className="bg-image">
-      <div className="container-shp">
-        <h1 className="title-shp">API Dogs</h1>
-        <NavLink to="home" className="enter-button">
-          <button class="learn-more">
-            <span class="circle" aria-hidden="true">
-              <span class="icon arrow"></span>
-            </span>
-            <span class="button-text">Entra</span>
-          </button>
-          {/* <button className="button-shp">Entra</button> */}
-        </NavLink>
+    
+    <div className="container1">
+    {
+      !spinner ? <div className="bg-spinner"><span className="spinner-shp"/></div> :
+      <div className="bg-image">
+        <div className="container-shp">
+          <span className="title-shp">API Dogs</span>
+          <NavLink to="home" className="enter-button">
+            <button className="learn-more">
+              <span className="circle" aria-hidden="true">
+                <span className="icon arrow"></span>
+              </span>
+              <span className="button-text">Entra</span>
+            </button>
+          </NavLink>
+        </div>
       </div>
+
+    }
     </div>
   );
 }

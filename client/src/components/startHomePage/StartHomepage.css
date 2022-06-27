@@ -7,6 +7,7 @@
     display: flex;
     align-items: flex-start;
     z-index: 0;
+    width: 100%;
     
 }
 
@@ -30,5 +31,46 @@
     align-items: center;
     font-family: 'Indie Flower';
     font-size: 50px;
+    width: 100%;
 }
 
+.enter.button{
+    height: fit-content;
+    width: 13%;
+    display: inline-block;
+}
+
+.container1{
+    width: 100%;
+    height: 100vh;
+    background-color: #ECD3F3
+}
+
+.spinner-shp{
+    border: 14px solid rgba(0,0,0, .1);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 52%;
+    left: 45%;
+}
+
+.bg-spinner{
+    background-image: url('../dogfind.png');
+    background-size:400px;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center
+}
+
+@keyframes spin{
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}

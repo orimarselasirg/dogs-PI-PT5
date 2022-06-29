@@ -6,11 +6,11 @@ import '../dogCardsComponents/card.css'
 import {spinnerchanger} from '../../controllers/spinControl'
 
 
+
 function Card(props) {
 const dispatch = useDispatch()
 const favorites = useSelector(state => state.favorites)
 const [spinner, setSpinner] = useState(false)
-
 
 spinnerchanger(setSpinner)
 
@@ -27,11 +27,8 @@ function breedFavorite (e){
     dispatch(removeFavorite(props.id))
   }
 }
-  
-  return (
-    
-    
-      
+
+  return (      
     <div className="card">
       <NavLink  className = 'breed-info' to={`/racedetails/${props.name}`}>
       <p className = 'breed-info'>{props.name}</p>
@@ -51,7 +48,7 @@ function breedFavorite (e){
         <span className="span-weight">Peso: </span>
         <span className = 'breed-weigth'>{props.weight} Kg</span>
       </div>
-      </div> 
+      </div>
     </div>
   );
 }

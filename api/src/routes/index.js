@@ -48,8 +48,8 @@ router.get('/dogs', async (req, res) => {
                     }
                 ]
                 })
-                // conversor de atributos BD
 
+                // conversor de atributos BD
                 const DbBreed = races.map(breed =>{
                     let temp = [];
                     for(let i = 0; i < breed.temperaments.length; i++){
@@ -92,6 +92,8 @@ router.get('/dogs', async (req, res) => {
     }
 })
 
+
+
 router.get('/dogs/:id', async (req, res) => {
     let {id} = req.params
     try {
@@ -111,24 +113,6 @@ router.get('/temperaments', async (req, res) => {
         console.log(error)
     }
 })
-
-
-
-// router.post('/dogs', async (req, res) => {
-//     let {name, height, weight, life_span, temperament} = req.body
-//     try {
-//     if(!name || !height || !weight) return res.status(401).send('Falta algun dato obligatorio para crear la raza')
-//     const temp = await Temperament.findOne({where : {temperament : temperament}, attributes : ['id']})
-//     const breed = await Dog.create({name, height, weight, life_span}) 
-//     await breed.addTemperament(temp)
-//     res.status(201).send({mesage : 'agregado'})
-    
-//     } catch (error) {
-//     console.log(error)
-//     }
-
-// })
-
 
 router.post('/dogs', async (req, res) => {
     let {name, heightmax, heightmin, weightmax, weightmin, life_span, temperament, image} = req.body
@@ -153,7 +137,6 @@ router.post('/dogs', async (req, res) => {
     }
 
 })
-
 
 
 module.exports = router;

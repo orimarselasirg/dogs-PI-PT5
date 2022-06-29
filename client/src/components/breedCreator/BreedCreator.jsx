@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { createRace } from "../../redux/actions";
 import { getTemperaments } from "../../redux/actions";
 // import { useLocation } from "react-router-dom";
@@ -50,7 +50,7 @@ function formValidator(input) {
 
 // componente que se renderiza para la creacion de la raza
 function BreedCreator(props) {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 //   const location = useLocation()
   const [error, setError] = useState({});
   const [input, setInput] = useState({
@@ -97,26 +97,9 @@ function BreedCreator(props) {
 
   function submitHandler(e) {
     e.preventDefault();
-    if (
-      input.name === "" ||
-      input.weightmax === "" ||
-      input.weightmin === "" ||
-      input.heightmax === "" ||
-      input.heightmin === "" ||
-      input.life_span === ""
-    )
-      return alert(
-        "(o _ o) ups!, parece que tienes un campo obligatorio vacio"
-      );
-    if (
-      !error.name &&
-      !error.weightmax &&
-      !error.weightmin &&
-      !error.heightmax &&
-      !error.heightmin &&
-      !error.life_span &&
-      !error.temperament
-    ) {
+    if (input.name === "" || input.weightmax === "" || input.weightmin === "" || input.heightmax === "" || input.heightmin === "" || input.life_span === "")
+      return alert("(o _ o) ups!, parece que tienes un campo obligatorio vacio");
+    if (!error.name && !error.weightmax && !error.weightmin && !error.heightmax && !error.heightmin && !error.life_span && !error.temperament) {
       dispatch(createRace(input));
       alert(`Genial!!!!, La raza ${input.name} ha sido creada`);
       document.getElementById("my-form").reset();
@@ -151,8 +134,10 @@ function BreedCreator(props) {
   }
 
   function home(e) {
-      navigate("/home", {replace: true})
-      window.location.reload()
+    // navigate("/home", {replace: true})
+    // window.location.reload()
+    e.preventDefault()
+    window.location.href = '/home'
     
   }
 

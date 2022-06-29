@@ -76,6 +76,7 @@ if(state.value ==='height-min-asc' || 'height-min-desc'){
             <option value = 'height-min-desc'>Height Min Desc</option>
           </select>
         </div>
+        
       </div>
       <div className="cards-style-container">
         {array.slice(sum, sum2).map((breed) => (
